@@ -100,3 +100,9 @@ document.querySelector(`nav`).prepend(startAnchor);
 
 // Changing nav color
 document.querySelectorAll(`nav > a`).forEach(item => item.style.color = `green`);
+
+// Stretch
+document.querySelector(`body`).style.color = `green`;
+document.querySelector(`h1`).style.color = `teal`;
+document.querySelectorAll(`h4`).forEach(item => item.style.color = `teal`);
+document.querySelectorAll(`h4`).forEach(item => item.style.fontSize = `1.5rem`);
