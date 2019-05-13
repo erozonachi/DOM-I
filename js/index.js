@@ -85,3 +85,18 @@ contactItems.children[3].textContent = siteContent[`contact`][`email`];
 // footer
 const footerText = document.querySelector(`footer > p`);
 footerText.innerHTML = siteContent[`footer`][`copyright`];
+
+// appendChild()
+const endAnchor = document.createElement(`a`);
+endAnchor.setAttribute(`href`, `#`);
+endAnchor.textContent = `Blog`;
+document.querySelector(`nav`).appendChild(endAnchor);
+
+// prepend()
+const startAnchor = document.createElement(`a`);
+startAnchor.setAttribute(`href`, `#`);
+startAnchor.textContent = `Home`;
+document.querySelector(`nav`).prepend(startAnchor);
+
+// Changing nav color
+document.querySelectorAll(`nav > a`).forEach(item => item.style.color = `green`);
