@@ -1,5 +1,10 @@
+:root {
+  font-size: 62.5%;
+}
+
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -11,4 +16,32 @@ body {
 
 .redDigit {
   color: red;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  border: 0;
+  outline: 0;
+  font-size: 1.8rem;
+  border-radius: .5em;
+  padding: 1em 0;
+  width: 5em;
+  margin: 0 1em;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+#btnReset {
+  background-color: brown;
+}
+
+.control:disabled {
+  cursor: not-allowed;
+  background-color: #aaa;
 }
